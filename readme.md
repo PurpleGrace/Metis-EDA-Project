@@ -17,8 +17,8 @@ The dataset contains 2722610 records with 11 columns for each, among which ‘C/
 From the 20 busiest stations in the mornings and evenings, we select those with a commute pattern. Stations are:
 ['96 ST', '34 ST-HERALD SQ', '59 ST', 'FULTON ST', '23 ST', 'PATH NEW WTC', 'CANAL ST', '59 ST COLUMBUS’]
 ##### Insight:
-• Most of those stations has a vague commute pattern.
-• For many stations with super large traffic, the peak exits happen in the afternoon.This information means there are might be extra potential customers for the food startup company.
+- Most of those stations has a vague commute pattern.
+- For many stations with super large traffic, the peak exits happen in the afternoon.This information means there are might be extra potential customers for the food startup company.
 #### Scenario 2: If startup company focus on commute traffic only
 ##### Method 1:
 Calculate the ratio of morning exits to the daily exits and evening entries to the daily entries for each commute stations, select those with each ratio rank among the 20 highest.
@@ -32,22 +32,13 @@ Calculate the difference of morning exits and entries, also of evening entries a
 Selected stations are:
 {'5 AV/53 ST', '47-50 STS ROCK', '42 ST-BRYANT PK', '5 AV/59 ST', '23 ST', 'LEXINGTON AV/53', '59 ST COLUMBUS', 'CHAMBERS ST', 'WALL ST', '77 ST', '96 ST', '59 ST', '72 ST-2 AVE', 'PATH NEW WTC’}
 ##### Insight:
-• Vague commute pattern
-
- • Diversified traffic volumes, many stations have exits peaks in the afternoon.
+- Vague commute pattern
+- Diversified traffic volumes, many stations have exits peaks in the afternoon.
 #### Potential best:
 Stations satisfy both methods:
 {'5 AV/53 ST','5 AV/59 ST','PATH NEW WTC’}
 ### Tools
-• Pandas for data manipulation
-• Matplotlib and Seaborn for plotting
-• SQL is used for data ingestion and Storage
-• SQLAlchemy for importing data into python
-Communication: Scenario 1
- Stations with large traffic volume and commute pattern
-
- Scenario 2 - Method 1
- Stations with good morning exits and evening entries ratios
-
-Scenario 2 - Method 2
- Scenario 2 -Combine
+- Pandas for data manipulation
+- Matplotlib and Seaborn for plotting
+- SQL is used for data ingestion and Storage
+- SQLAlchemy for importing data into python
